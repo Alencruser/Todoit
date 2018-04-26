@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
+<meta charset="utf-8">
 <script src = "script.js">
 </script>
 </head>
 <body>
-	<input id="textarea" type="textarea" value="Entrez votre tâche">
-	<button value="Valider" onclick="(fonction à définir)">
-</button>
+	<input id="tache" type="textarea" placeHolder="Entrez votre tâche">
+	<button type="button" id="addtask" onClick="submit()">Ajouter votre tâche</button>
+	<div id="affichagetest">
+		<ul id="tasks"></ul>
+	</div>
 </body>
 </html>
