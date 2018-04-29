@@ -1,11 +1,12 @@
 
-function submit(){
-var input = document.getElementById("tache").value;
-var itemlist = document.createElement("li").value;
-//input=itemlist;
+function submit () {
+	var input=document.getElementById('tache');
+	var checkbox=document.createElement('checkbox');
+	checkbox.type='checkbox';
+	var li=document.createElement('li');
+	texte=document.createElement('label');
 
-var unordered= document.getElementById('tasks');
+	li.appendChild(checkbox);
+	li.appendChild(input);
 
-//unordered.appendChild(input);
-console.log(input);
 }
