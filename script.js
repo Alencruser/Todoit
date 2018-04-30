@@ -1,13 +1,12 @@
-
-function submit () {
-	var input=document.getElementById('input').value;
+function submit() {
+	var input=document.getElementById('userinput').value;
 	var task=document.getElementById('tasks');
-	var li=document.createElement('li');
+	var list=document.createElement('li');
 
-	li.appendChild(document.createTextNode("" + input));
-	task.appendChild(li);
-	document.getElementById('input').value="";
-	li.onclick=removeItem;
+	task.appendChild(list);
+	list.innerHTML=input;
+
+	console.log(input);
 }
 	var entree = document.body;
 	entree.onkeyup = function (e){
